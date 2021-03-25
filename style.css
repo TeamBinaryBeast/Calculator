@@ -1,0 +1,98 @@
+/* border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff; */
+             body {
+                 background-color: #9d0f0f;
+             }
+             header h1 {
+                 background-color: black;
+                 color: #e60303;
+                 padding: 10px 5px;
+                 text-align: center;
+             }
+             * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: rgb(0, 255, 255);
+            }
+            
+            button {
+                height: 30px;
+                text-align: center;
+                color: rgb(0, 255, 255);
+                background-color: black;
+                padding: auto;
+                font-weight: bold;
+                font-size: 15px;
+                border-radius: 5px;
+                border: none;
+                width: 100%;
+            }
+            
+            .screen {
+                margin: 0 auto;
+                
+                height: 70px !important;
+                width: 85%;
+                border-radius: 10px;
+                overflow: hidden;
+                padding: 5px 5px;
+             
+            
+                background-color: black;
+                
+            }
+            
+            .screen #screen, .screen #temp {
+                padding: 5px 5px;
+                text-align: right;
+                width:  100%;
+                color: rgb(0, 255, 255);
+                background-color: black;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+            }
+            
+            .temp-display input {
+                display: none;
+                border: none;
+                width: 50px;
+                color: rgb(0, 255, 255);
+            }
+            
+            .temp-display {
+                position: absolute !important;
+                top: 0px !important;
+                left: 0px !important;
+            }
+            table{ 
+                margin: 0px auto;
+                margin-top: 15px !important;
+                margin-bottom: 25px;;
+            }
+            
+            td {
+                width: 65px;
+                height: 40px;
+            
+            
+            }
+            
+            .wraper{
+                padding-top: 20px;
+                padding-bottom: 10px;;
+                width: 310px !important;
+                text-align: center;
+                margin: 0px auto;
+                background-color: #9d0f0f;
+                height: 330px;
+                width: 300px;
+                margin-top: 40px;
+                /* border: 1px solid rgb(92, 92, 92); */
+                border-radius: 15px;
+                box-shadow:  20px 20px 60px #850d0d,
+                -20px -20px 60px #b51111;
+            }

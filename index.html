@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Calculator</h1></header>
+    
+
+    <div class="wraper">
+        <div class="screen">
+            <input id = "temp" type="text" value= "" disabled>
+            <input type="text" id = "screen" value = "0" disabled>
+        </div>
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td><button id = 'AC' onclick = 'calculate(this)'>AC</button></td>
+                    <td><button id = 'C' onclick = 'calculate(this)'>C</button></td>
+                    <td><button id = '%' onclick = 'calculate(this)'>%</button></td>
+                    <td><button id = '/' onclick = 'calculate(this)'>&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button id = '7' onclick = 'calculate(this)'>7</button></td>
+                    <td><button id = '8' onclick = 'calculate(this)'>8</button></td>
+                    <td><button id = '9' onclick = 'calculate(this)'>9</button></td>
+                    <td><button id = '*' onclick = 'calculate(this)'>&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button id = '4' onclick = 'calculate(this)'>4</button></td>
+                    <td><button id = '5' onclick = 'calculate(this)'>5</button></td>
+                    <td><button id = '6' onclick = 'calculate(this)'>6</button></td>
+                    <td><button id = '-' onclick = 'calculate(this)'>-</button></td>
+                </tr>
+                <tr>
+                    <td><button id = '1' onclick = 'calculate(this)'>1</button></td>
+                    <td><button id = '2' onclick = 'calculate(this)'>2</button></td>
+                    <td> <button id = '3' onclick = 'calculate(this)'>3</button></td>
+                    <td> <button id = '+' onclick = 'calculate(this)'>+</button></td>
+                </tr>
+                <tr>
+                    <td><button id = '.' onclick = 'calculate(this)'>.</button></td>
+                    <td><button id = '0' onclick = 'calculate(this)'>0</button></td>
+                    <td colspan="2"><button id = '=' onclick = 'calculate(this)'>=</button></td>
+                </tr>
+            </table>   
+        </div>
+    </div>
+
+    <div class="temp-display">
+        <input type="text" value = "" id="sign" disabled>
+        
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
