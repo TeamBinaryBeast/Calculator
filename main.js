@@ -39,7 +39,7 @@ function calculate(button){
     if(id == "C"){
         var ln = screen.value.length;
         screen.value = screen.value.slice(0, ln-1)
-        if(screen.value == "" || sing.value == "erase"){
+        if(screen.value == "" || sign.value == "erase"){
             screen.value = "0"
         }
     }
