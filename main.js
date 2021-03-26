@@ -87,8 +87,9 @@ function calculate(button){
     if (id == "=" && screen.value != ""){
 
         sign.value = "erase";
+        screen.value = temp.value;
         temp.value = "";
-        screen.value = total;
+        
     }
         
 }
