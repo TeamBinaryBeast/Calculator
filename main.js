@@ -39,12 +39,12 @@ function calculate(button){
     if(id == "C"){
         var ln = screen.value.length;
         screen.value = screen.value.slice(0, ln-1)
-        if(screen.value == ""){
+        if(screen.value == "" || sing.value == "erase"){
             screen.value = "0"
         }
     }
 
-    if (id == "+" || id == "-" || id == "*" || id == "/"){
+    if (id == "+" || id == "-" || id == "*" || id == "/" || id == "="){
         if(screen.value.includes("%")){
             screen.value = screen.value.slice(0, -1);
             screen.value = parseFloat(screen.value) / 100;
@@ -85,35 +85,6 @@ function calculate(button){
     
 
     if (id == "=" && screen.value != ""){
-        if(screen.value.includes("%")){
-            screen.value = screen.value.slice(0, -1);
-            screen.value = parseFloat(screen.value) / 100;
-        }
-        if(temp.value.includes("%")){
-            temp.value = temp.value.slice(0, -1);
-            temp.value = parseFloat(temp.value) / 100;
-        }
-
-        if(sign.value == "+"){
-            total = parseFloat(temp.value) + parseFloat(screen.value);
-        }
-
-        if(sign.value == "-"){
-            total = parseFloat(temp.value) - parseFloat(screen.value);
-        }
-
-        if(sign.value == "*"){
-            total = parseFloat(temp.value) * parseFloat(screen.value);
-        }
-
-        if(sign.value == "/"){
-            if(screen.value == "0"){
-                total = 0;
-            } else {
-                total = parseFloat(temp.value) / parseFloat(screen.value);
-            }
-            
-        }
 
         sign.value = "erase";
         temp.value = "";
